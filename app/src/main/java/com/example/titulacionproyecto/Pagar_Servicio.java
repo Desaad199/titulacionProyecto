@@ -20,9 +20,11 @@ public class Pagar_Servicio extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pagar_servicio);
+        //relaciona el spinner y el boton
         spnEstrellas = findViewById(R.id.spnEstrellas);
         btnAcabar = findViewById(R.id.btnAcabar);
 
+        //colocar los valores del spinner usando un arreglo
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, opc1);
         spnEstrellas.setAdapter(adapter);
 
@@ -35,10 +37,6 @@ public class Pagar_Servicio extends AppCompatActivity {
                 startActivity(admin);
             }
         });
-
-
-
-
 
     }
 }
