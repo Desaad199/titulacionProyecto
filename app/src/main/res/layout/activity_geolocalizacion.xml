@@ -6,6 +6,63 @@
         android:id="@+id/mapFragment"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="250dp" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COSTO DEL LAVADO"
+        android:background="#ffffff"
+        android:textSize="25sp"
+        android:layout_marginTop="300dp"
+        android:padding="15dp"
+         />
+
+    <TextView
+        android:id="@+id/txtCosto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:background="#ffffff"
+        android:textSize="25sp"
+        android:layout_marginTop="350dp"
+        android:padding="15dp"
+        />
+
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TIEMPO DE ESPERA"
+        android:background="#ffffff"
+        android:textSize="25sp"
+        android:layout_marginTop="450dp"
+        android:padding="15dp"
+        />
+
+    <TextView
+        android:id="@+id/txtTiempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:background="#ffffff"
+        android:textSize="25sp"
+        android:layout_marginTop="500dp"
+        android:padding="15dp"
+        />
+
+    <Button
+        android:id="@+id/btnPagar"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:text="PAGAR SERVICIO"
+        android:textSize="25sp"
+        android:layout_marginTop="600dp"
+        android:padding="15dp"
+         />
+
+
 
 </FrameLayout>
