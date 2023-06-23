@@ -11,10 +11,13 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="LavaFast"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TitulacionProyecto"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
+        <activity
+            android:name=".Pagar_Servicio"
+            android:exported="false" />
         <activity
             android:name=".Geolocalizacion"
             android:exported="false" />
