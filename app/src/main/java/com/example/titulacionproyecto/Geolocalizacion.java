@@ -33,20 +33,23 @@ public class Geolocalizacion extends AppCompatActivity implements OnMapReadyCall
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_geolocalizacion);
+        //relacionar los botones y los edit text
         txtCosto = findViewById(R.id.txtCosto);
         txtTiempo = findViewById(R.id.txtTiempo);
         btnPagar = findViewById(R.id.btnPagar);
 
+        //desactivar el boton de pagar
         btnPagar.setEnabled(false);
 
+        //calcular el costo de lavado
         Random ran = new Random();
         ran.setSeed(System.currentTimeMillis());
         co = ran.nextInt(300);
-
         costo = co * 2.3;
-
         txtCosto.setText(String.valueOf(df.format(costo)));
 
+
+        //generar el temporizador de tiempo de espera
         ran.setSeed(System.currentTimeMillis());
         ti = ran.nextInt(300000);
         final MiContador timer = new MiContador(ti,1000);
